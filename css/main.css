@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.navbar img {
+    max-width: 3rem;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* colors {
+    #1d2b2d -- main color
+    #3b4b53 -- navbar color   
+}*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 0 .25rem 0 rgba(0, 0, 0, .2);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #3b4b53;
+}
+
+.navbar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.navbar li {
+    margin-left: 1rem;
+}
