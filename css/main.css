@@ -1,15 +1,63 @@
 body {
     margin: 0;
     line-height: 1.5;
+    min-height: auto;
+    min-width: 100vw;
+    overflow-x: hidden;
+    background: #716f97;
+    /* object-fit: fill;
+    background-image: url("../images/monster-hunter-home-screen.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: #56402f;
+    background-position: 50% 4vh; */
+}
+
+#background-div {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+figure {
+    background: #716f97;
+    width: 100vw;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    /* box-shadow: 0 0 100px black; */
 }
 
 .navbar img {
+    width: 100%;
     max-width: 3rem;
 }
 
 img {
-    width: 100%;
+    width: 50%;
     display: block;
+    padding: 0;
+    margin: 0;
+}
+
+#background-img {
+    min-width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    display: block;
+}
+
+p {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.no-bullets {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* colors {
@@ -31,10 +79,83 @@ img {
 
 .navbar ul {
     display: flex;
+    flex-direction: row;
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
+
 .navbar li {
     margin-left: 1rem;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.flex-small {
+    display: flex;
+}
+
+.flex-small-column {
+    flex-direction: column;
+}
+
+.max-char-75 {
+    max-width: 75ch;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+#first-one {
+    /* margin-top: 20vh; */
+    box-shadow: 0 0 20px 20px rgba(113, 111, 151), 0 0 10px 10px rgba(113, 111, 151);
+    /* min-height: 20vh; */
+}
+
+.navbar li a:link {
+    color: white;
+}
+
+.navbar li a:visited {
+    color: violet;
+}
+
+.navbar li a:hover {
+    color: red;
+}
+
+.navbar li a:active {
+    color: blue;
+}
+
+.max-width {
+    max-width: 20%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+@media screen and (min-width: 50em) {
+    .flex {
+        display: flex;
+    }
+
+    .flex > * {
+        flex: 1;
+        width: 100%;
+    }
 }
