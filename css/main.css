@@ -24,7 +24,7 @@ ul {
 
 figure {
     background: #716f97;
-    width: 100vw;
+    /* width: 100vw; */
     margin: 0 auto;
     margin-bottom: 3rem;
     /* box-shadow: 0 0 100px black; */
@@ -36,7 +36,7 @@ figure {
 }
 
 img {
-    width: 50%;
+    width: 100%;
     display: block;
     padding: 0;
     margin: 0;
@@ -152,6 +152,11 @@ p {
 @media screen and (min-width: 50em) {
     .flex {
         display: flex;
+        flex-direction: row;
+    }
+
+    .add-top-shadow {
+        box-shadow: 0 0 20px 20px rgba(113, 111, 151), 0 0 10px 10px rgba(113, 111, 151);
     }
 
     .flex > * {
