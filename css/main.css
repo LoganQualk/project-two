@@ -110,7 +110,7 @@ p {
     flex-grow: 1;
 }
 
-#first-one {
+.first-one {
     /* margin-top: 20vh; */
     box-shadow: 0 0 20px 20px rgba(113, 111, 151), 0 0 10px 10px rgba(113, 111, 151);
     /* min-height: 20vh; */
