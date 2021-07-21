@@ -4,7 +4,8 @@ body {
     min-height: auto;
     min-width: 100vw;
     overflow-x: hidden;
-    background: #716f97;
+    background: #737198;
+    font-family: Nunito;
     /* object-fit: fill;
     background-image: url("../images/monster-hunter-home-screen.jpg");
     background-repeat: no-repeat;
@@ -115,8 +116,8 @@ p {
 }
 
 main {
-    background: rgba(113, 111, 151); 
-    box-shadow: 0 0 20px 20px rgba(113, 111, 151), 0 0 10px 10px rgba(113, 111, 151);
+    background: rgba(115, 113, 152); 
+    box-shadow: 0 0 20px 20px rgba(115, 113, 152), 0 0 10px 10px rgba(115, 113, 152);
     padding-top: 50px;
     position: relative;
 }
@@ -168,11 +169,45 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
-    width: 50%;
-    height: 50%;
-    /* max-width: 50%;
-    max-height: 50%; */
+    width: 100%;
+    height: 100%;
 }
+
+.max-width-45 {
+    max-width: 45em;
+    margin: 0 auto;
+}
+
+.left-align {
+    text-align: left;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #3b4b53;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+    color: red;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: rgba(115, 113, 152);
+    display: none;
+    overflow: hidden;
+  }
 
 @media screen and (min-width: 50em) {
     .flex {
@@ -181,7 +216,7 @@ main {
     }
 
     .add-top-shadow {
-        box-shadow: 0 0 20px 20px rgba(113, 111, 151), 0 0 10px 10px rgba(113, 111, 151);
+        box-shadow: 0 0 20px 20px rgba(115, 113, 152), 0 0 10px 10px rgba(115, 113, 152);
     }
 
     .flex > * {
